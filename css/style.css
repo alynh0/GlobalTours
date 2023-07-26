@@ -86,7 +86,7 @@ fieldset {
     max-height: 100%;
     margin: 0 auto;
     padding: 1% 2%;
-    background-color: #30A8F2;
+    background-color: rgba(18, 54, 77, 0.3);
     border-radius: 5px;
     border: 1px solid rgba(0,0,0,0.30);
 }
@@ -195,11 +195,7 @@ section {
 }
 
 .promo {
-    /* display: flex;
-    justify-content: space-evenly;
-    gap: 20px;
     width: 100%;
-    height: fit-content; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -363,6 +359,10 @@ section {
 /* FIM SECTION 1 */
 
 /* SECTION 2 */
+
+.outrosDestinos {
+    width: 100%;
+}
 
 .destinosCards {
     display: flex;
@@ -700,5 +700,49 @@ footer img:hover {
     transition: all 0.3s ease;
 }
 
-/* RESPONSIVIDADE */
+/* ADAPTAÇÃO PARA DISPOSITIVOS MÓVEIS */
 
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        max-height: 100%;
+    }
+
+    nav img {
+        height: 70px;
+        margin: 0;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        list-style: none;
+        padding: 10px;
+    }
+
+    nav ul a {
+        margin: 0;
+    }
+
+    .menu {
+        background-color: #2d2c64;
+        width: 100%;
+        box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+    }
+
+    /* FIM NAVBAR */
+
+    /* FOOTER */
+    footer a {
+        padding: 10px;
+    }
+}
